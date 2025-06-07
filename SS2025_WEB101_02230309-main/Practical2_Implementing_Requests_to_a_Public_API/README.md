@@ -1,89 +1,72 @@
-📌 Overview
-The app lets users:
+# Practical 2 Reflection: RESTful Weather App ☁️🌦️
 
-GET weather info using OpenWeatherMap API
+## 📌 What I Built
 
-POST and save favorite locations
+A weather app using plain **HTML/CSS/JS** that demonstrates all 4 major REST API methods:
+- `GET`: Fetch weather info from **OpenWeatherMap**
+- `POST`: Save favorite locations with custom notes
+- `PUT`: Edit saved location details
+- `DELETE`: Remove unwanted locations
 
-PUT to edit saved location info
+Also used **LocalStorage** to manage user data without a backend.
 
-DELETE unwanted saved locations
+---
 
-🔍 Key Features
-✅ GET: Get Weather Info
-Enter a city name and fetch real-time weather (temperature, humidity, wind, etc.)
+## 🔍 Key Features
 
-✅ POST: Save Location
-Save your favorite places with names and notes
+✅ **Get Weather**  
+Enter a city name → Fetch live weather (temp, humidity, wind)
 
-✅ PUT: Edit Location
-Change existing saved location details
+✅ **Save Location**  
+POST your favorite cities with custom name & country
 
-✅ DELETE: Remove Location
-Delete any location from your saved list
+✅ **Edit Location**  
+PUT method to update city details
 
-✅ Simple Interface
-Clean, mobile-friendly layout with status messages, error handling, and loading indicators
+✅ **Delete Location**  
+Click delete to remove a saved place
 
-⚙️ Setup
-Install
+✅ **Clean UI**  
+Simple, mobile-friendly design with:
+- Loading indicators
+- Error messages
+- Empty field warnings
 
-Make a folder and add the provided index.html and script.js
+---
 
-Get an API Key
+## ⚙️ Setup Steps
 
-Sign up at OpenWeatherMap
+1. Create a folder and add:
+   - `index.html`
+   - `script.js`
 
-Set API Key
+2. Get API Key from [OpenWeatherMap](https://openweathermap.org/api)
 
-Replace YOUR_OPENWEATHERMAP_API_KEY in script.js with your key
+3. Paste your API key in `script.js`:
+```js
+const API_KEY = 'YOUR_OPENWEATHERMAP_API_KEY';
+💻 Technologies Used
+HTML/CSS/JavaScript
 
-Run
+OpenWeatherMap API (GET)
 
-Just open index.html in your browser – no server needed
+JSONPlaceholder API (POST/PUT/DELETE simulation)
 
-💡 How to Use
-Get Weather
+LocalStorage for storing user data
 
-Type city → Click "Get Weather" → See live weather info
+🧠 What I Learned
+How REST APIs work in real-world apps
 
-Save Location
+Using fetch() for GET, POST, PUT, DELETE in JS
 
-Add a name, city, country → Click "Save"
+Handling API responses and errors
 
-Edit/Delete
+Creating interactive, responsive web apps without frameworks
 
-View saved locations → Use edit or delete buttons
-
-🧪 Test Examples
-✅ "London" → Shows data
-
-❌ "FakeCity123" → Shows error
-
-Saving with empty fields → Shows warning
-
-Edit or delete works with simple clicks
-
-💻 Tech Used
-HTML/CSS/JS
-
-OpenWeatherMap API for weather
-
-JSONPlaceholder API for testing POST/PUT/DELETE
-
-LocalStorage for saving user data
-
-🧠 What You Learn
-How REST APIs work
-
-Using GET/POST/PUT/DELETE in JavaScript
-
-Dealing with real API data
-
-Building interactive and responsive web apps
+Managing client-side data using LocalStorage
 
 🔗 Useful Links
-OpenWeatherMap API
+🌐 OpenWeatherMap API
 
-JSONPlaceholder API
+🧪 JSONPlaceholder API
 
